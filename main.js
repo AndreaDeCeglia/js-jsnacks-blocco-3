@@ -58,28 +58,63 @@
 //ognuno formato da 10 numeri casuali da 1 a 100.
 //Ogni volta che ne crei uno, stampalo.
 
-let N = parseInt( prompt('write how many array you want to create'));
-console.log(N);
+// let N = parseInt( prompt('write how many array you want to create'));
+// console.log(N);
 
-let x = 0;
+// let x = 0;
 
-while( x < N ){
+// while( x < N ){
     
-    let array = new Array();
-    console.log(array);
+//     let array = new Array();
+//     console.log(array);
 
-    let i = 0;
+//     let i = 0;
 
-    while( i<10 ){
+//     while( i<10 ){
 
-        array.push(Math.round(Math.random() * 100 ));
-        console.log(array);
+//         array.push(Math.round(Math.random() * 100 ));
+//         console.log(array);
 
-        i++;
+//         i++;
+//     }
+
+//     console.log(array);
+
+//     x++;
+
+// }
+
+//*********************************************** */
+
+
+//*Snack4 (Bonus)*
+//In un array sono contenuti i nomi degli invitati 
+//alla festa del grande Gatsby, chiedi all’utente 
+//il suo nome e comunicagli se può partecipare o no alla festa.
+//Interrompi il ciclo appena il nome è stato trovato.
+
+let list = ['Gigio', 'Gigia', 'Nini', 'Andrea', 'Batman', 'Goku', 'Pingu'];
+console.log(list);
+
+let inputName = prompt('write your name for check in the list');
+console.log(inputName);
+
+let i = 0;
+
+while( i < list.length ){
+
+    console.log(i);
+
+    if( inputName == list[i] ){
+        
+        console.log("ok, let's come in man !!!!!");
+
+        break;
+
+    } else if( i == (list.length - 1) ){
+
+        console.log("I'm sorry, you cannot partecipate !!");
     }
 
-    console.log(array);
-
-    x++;
-
+    i++;
 }
