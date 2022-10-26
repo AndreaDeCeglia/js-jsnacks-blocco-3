@@ -30,21 +30,56 @@
 //Il programma stampa la somma di 
 //tutti i numeri inseriti.
 
-let i = 0;
+// let i = 0;
 
-let sum = 0;
+// let sum = 0;
 
-console.log(sum);
+// console.log(sum);
 
-while( i < 5 ){
+// while( i < 5 ){
     
-    let number = parseInt( prompt('write a number'));
-    console.log(number);
+//     let number = parseInt( prompt('write a number'));
+//     console.log(number);
 
-    sum += number;
-    console.log(sum);
+//     sum += number;
+//     console.log(sum);
 
-    i++
+//     i++
+// }
+
+// console.log(`the sum is `, sum);
+
+//***************************************************** */
+
+
+//*Snack3* (Bonus)
+//Fai inserire un numero, che chiameremo N, all’utente.
+//Genera N array,
+//ognuno formato da 10 numeri casuali da 1 a 100.
+//Ogni volta che ne crei uno, stampalo.
+
+let N = parseInt( prompt('write how many array you want to create'));
+console.log(N);
+
+let x = 0;
+
+while( x < N ){
+    
+    let array = new Array();
+    console.log(array);
+
+    let i = 0;
+
+    while( i<10 ){
+
+        array.push(Math.round(Math.random() * 100 ));
+        console.log(array);
+
+        i++;
+    }
+
+    console.log(array);
+
+    x++;
+
 }
-
-console.log(`the sum is `, sum);
