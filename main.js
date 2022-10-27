@@ -12,10 +12,13 @@
 // let sum = 0;
 
 // while( sum < 50 ){
+
 //     let number = parseInt( prompt('write a number'));
 //     console.log(number);
+
 //     sum += number;
 //     console.log(sum);
+
 //     array.push(number);
 // }
 
@@ -93,6 +96,36 @@
 //il suo nome e comunicagli se può partecipare o no alla festa.
 //Interrompi il ciclo appena il nome è stato trovato.
 
+// let list = ['Gigio', 'Gigia', 'Nini', 'Andrea', 'Batman', 'Goku', 'Pingu'];
+// console.log(list);
+
+// let inputName = prompt('write your name for check in the list');
+// console.log(inputName);
+
+// let i = 0;
+
+// while( i < list.length ){
+
+//     console.log(i);
+
+//     if( inputName == list[i] ){
+        
+//         console.log("ok, let's come in man !!!!!");
+
+//         break;
+
+//     } else if( i == (list.length - 1) ){
+
+//         console.log("I'm sorry, you cannot partecipate !!");
+//     }
+
+//     i++;
+// }
+
+//************************************************************ */
+//*********** second way ************************************* */
+//************************************************************ */
+
 let list = ['Gigio', 'Gigia', 'Nini', 'Andrea', 'Batman', 'Goku', 'Pingu'];
 console.log(list);
 
@@ -101,20 +134,19 @@ console.log(inputName);
 
 let i = 0;
 
+let control = false;
+
 while( i < list.length ){
-
-    console.log(i);
-
     if( inputName == list[i] ){
-        
-        console.log("ok, let's come in man !!!!!");
-
-        break;
-
-    } else if( i == (list.length - 1) ){
-
-        console.log("I'm sorry, you cannot partecipate !!");
+        control = true;
+        console.log(control);
     }
-
     i++;
 }
+
+if( control ){
+    console.log( `Let's come in man!!` );
+} else{
+    console.log( `I'm sorry, you cannot partecipate !!` );
+}
+
